@@ -1,0 +1,19 @@
+max=0
+min=None
+while True:
+    n=input("Enter")
+    try:
+        if n=="done":
+            break
+        num=int(n)
+        if max<num:
+            max=num
+        if min is None:
+            min=num
+        elif min>num:
+            min=num
+    except:
+        print("Invalid input")
+        continue
+print("Maximum is",max)
+print("Minimum is",min)
